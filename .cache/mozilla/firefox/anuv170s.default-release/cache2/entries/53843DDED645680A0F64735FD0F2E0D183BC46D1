@@ -1,0 +1,485 @@
+/*!
+* primisslate
+*   github.com/premasagar/primisslate
+*
+*//*
+    An extreme CSS reset stylesheet, for normalising the styling of a container element and its children.
+
+    by Premasagar Rose
+        dharmafly.com
+
+    license
+        opensource.org/licenses/mit-license.php
+
+    **
+
+    v0.10.1
+
+*/
+
+    /* == BLANKET RESET RULES == */
+
+    /* HTML 4.01 */
+.primisslate, .primisslate h1, .primisslate h2, .primisslate h3, .primisslate h4, .primisslate h5, .primisslate h6, .primisslate p, .primisslate td, .primisslate dl, .primisslate tr, .primisslate dt, .primisslate ol, .primisslate form, .primisslate select, .primisslate option, .primisslate pre, .primisslate div, .primisslate table,  .primisslate th, .primisslate tbody, .primisslate tfoot, .primisslate caption, .primisslate thead, .primisslate ul, .primisslate li, .primisslate address, .primisslate blockquote, .primisslate dd, .primisslate fieldset, .primisslate li, .primisslate iframe, .primisslate strong, .primisslate legend, .primisslate em, .primisslate summary, .primisslate cite, .primisslate span, .primisslate input, .primisslate sup, .primisslate label, .primisslate dfn, .primisslate object, .primisslate big, .primisslate q, .primisslate samp, .primisslate acronym, .primisslate small, .primisslate img, .primisslate strike, .primisslate code, .primisslate sub, .primisslate ins, .primisslate textarea, .primisslate button, .primisslate var, .primisslate a, .primisslate abbr, .primisslate applet, .primisslate del, .primisslate kbd, .primisslate tt, .primisslate b, .primisslate i, .primisslate hr,
+
+/* HTML5 - Sept 2013 taken from MDN https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/HTML5_element_list */
+.primisslate article, .primisslate aside, .primisslate figure, .primisslate figcaption, .primisslate footer, .primisslate header, .primisslate menu, .primisslate nav, .primisslate section, .primisslate time, .primisslate mark, .primisslate audio, .primisslate video, .primisslate abbr, .primisslate address, .primisslate area, .primisslate blockquote, .primisslate canvas, .primisslate caption, .primisslate cite, .primisslate code, .primisslate colgroup, .primisslate col, .primisslate datalist, .primisslate fieldset, .primisslate main, .primisslate map, .primisslate meta, .primisslate optgroup, .primisslate output, .primisslate progress, .primisslate svg {
+    background-attachment:scroll;
+    background-color:transparent;
+    background-image:none; /* This rule affects the use of pngfix JavaScript http://dillerdesign.com/experiment/DD_BelatedPNG for IE6, which is used to force the browser to recognise alpha-transparent PNGs files that replace the IE6 lack of PNG transparency. (The rule overrides the VML image that is used to replace the given CSS background-image). If you don't know what that means, then you probably haven't used the pngfix script, and this comment may be ignored :) */
+    background-position:0 0;
+    background-repeat:repeat;
+    border-color:black;
+    border-color:currentColor; /* `border-color` should match font color. Modern browsers (incl. IE9) allow the use of "currentColor" to match the current font 'color' value <http://www.w3.org/TR/css3-color/#currentcolor>. For older browsers, a default of 'black' is given before this rule. Guideline to support older browsers: if you haven't already declared a border-color for an element, be sure to do so, e.g. when you first declare the border-width. */
+    border-radius:0;
+    border-style:none;
+    border-width:medium;
+    bottom:auto;
+    clear:none;
+    clip:auto;
+    color:inherit;
+    counter-increment:none;
+    counter-reset:none;
+    cursor:auto;
+    direction:inherit;
+    display:inline;
+    float:none;
+    font-family: inherit; /* As with other inherit values, this needs to be set on the root container element */
+    font-size: inherit;
+    font-style:inherit;
+    font-variant:normal;
+    font-weight:inherit;
+    height:auto;
+    left:auto;
+    letter-spacing:normal;
+    line-height:inherit;
+    list-style-type: inherit; /* Could set list-style-type to none */
+    list-style-position: outside;
+    list-style-image: none;
+    margin:0;
+    max-height:none;
+    max-width:none;
+    min-height:0;
+    min-width:0;
+    opacity:1;
+    outline:invert none medium;
+    overflow:visible;
+    padding:0;
+    position:static;
+    quotes: "" "";
+    right:auto;
+    table-layout:auto;
+    text-align:inherit;
+    text-decoration:inherit;
+    text-indent:0;
+    text-transform:none;
+    top:auto;
+    unicode-bidi:normal;
+    vertical-align:baseline;
+    visibility:inherit;
+    white-space:normal;
+    width:auto;
+    word-spacing:normal;
+    z-index:auto;
+
+    /* CSS3 */
+    /* Including all prefixes according to http://caniuse.com/ */
+    /* CSS Animations don't cascade, so don't require resetting */
+    -webkit-background-origin: padding-box;
+            background-origin: padding-box;
+    -webkit-background-clip: border-box;
+            background-clip: border-box;
+    -webkit-background-size: auto;
+       -moz-background-size: auto;
+            background-size: auto;
+    -webkit-border-image: none;
+       -moz-border-image: none;
+         -o-border-image: none;
+            border-image: none;
+    -webkit-border-radius:0;
+       -moz-border-radius:0;
+            border-radius: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    -webkit-column-count: auto;
+       -moz-column-count: auto;
+            column-count: auto;
+    -webkit-column-gap: normal;
+       -moz-column-gap: normal;
+            column-gap: normal;
+    -webkit-column-rule: medium none black;
+       -moz-column-rule: medium none black;
+            column-rule: medium none black;
+    -webkit-column-span: 1;
+       -moz-column-span: 1; /* doesn't exist yet but probably will */
+            column-span: 1;
+    -webkit-column-width: auto;
+       -moz-column-width: auto;
+            column-width: auto;
+    font-feature-settings: normal;
+    overflow-x: visible;
+    overflow-y: visible;
+    -webkit-hyphens: manual;
+       -moz-hyphens: manual;
+            hyphens: manual;
+    -webkit-perspective: none;
+       -moz-perspective: none;
+        -ms-perspective: none;
+         -o-perspective: none;
+            perspective: none;
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+        -ms-perspective-origin: 50% 50%;
+         -o-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%;
+    -webkit-backface-visibility: visible;
+       -moz-backface-visibility: visible;
+        -ms-backface-visibility: visible;
+         -o-backface-visibility: visible;
+            backface-visibility: visible;
+    text-shadow: none;
+    -webkit-transition: all 0s ease 0s;
+            transition: all 0s ease 0s;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+    -webkit-transform-origin: 50% 50%;
+       -moz-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+         -o-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform-style: flat;
+       -moz-transform-style: flat;
+        -ms-transform-style: flat;
+         -o-transform-style: flat;
+            transform-style: flat;
+    word-break: normal;
+}
+
+/* == BLOCK-LEVEL == */
+/* Actually, some of these should be inline-block and other values, but block works fine (TODO: rigorously verify this) */
+/* HTML 4.01 */
+.primisslate, .primisslate h3, .primisslate h5, .primisslate p, .primisslate h1, .primisslate dl, .primisslate dt, .primisslate h6, .primisslate ol, .primisslate form, .primisslate option, .primisslate pre, .primisslate div, .primisslate h2, .primisslate caption, .primisslate h4, .primisslate ul, .primisslate address, .primisslate blockquote, .primisslate dd, .primisslate fieldset, .primisslate hr,
+
+/* HTML5 new elements */
+.primisslate article, .primisslate dialog, .primisslate figure, .primisslate footer, .primisslate header, .primisslate hgroup, .primisslate menu, .primisslate nav, .primisslate section, .primisslate audio, .primisslate video, .primisslate address, .primisslate blockquote, .primisslate colgroup, .primisslate main, .primisslate progress, .primisslate summary {
+    display:block;
+}
+.primisslate h1, .primisslate h2, .primisslate h3, .primisslate h4, .primisslate h5, .primisslate h6 {
+    font-weight: bold;
+}
+.primisslate h1 {
+    font-size: 2em;
+    padding: .67em 0;
+}
+.primisslate h2 {
+    font-size: 1.5em;
+    padding: .83em 0;
+}
+.primisslate h3 {
+    font-size: 1.17em;
+    padding: .83em 0;
+}
+.primisslate h4 {
+    font-size: 1em;
+}
+.primisslate h5 {
+    font-size: .83em;
+}
+.primisslate p {
+    margin: 1em 0;
+}
+.primisslate table {
+    display: table;
+}
+.primisslate thead {
+    display: table-header-group;
+}
+.primisslate tbody {
+    display: table-row-group;
+}
+.primisslate tfoot {
+    display: table-footer-group;
+}
+.primisslate tr {
+    display: table-row;
+}
+.primisslate th, .primisslate td {
+    display: table-cell;
+    padding: 2px;
+}
+
+/* == SPECIFIC ELEMENTS == */
+/* Some of these are browser defaults; some are just useful resets */
+.primisslate ol, .primisslate ul {
+    margin: 1em 0;
+}
+.primisslate ul li, .primisslate ul ul li, .primisslate ul ul ul li, .primisslate ol li, .primisslate ol ol li, .primisslate ol ol ol li, .primisslate ul ol ol li, .primisslate ul ul ol li, .primisslate ol ul ul li, .primisslate ol ol ul li {
+    list-style-position: inside;
+    margin-top: .08em;
+}
+.primisslate ol ol, .primisslate ol ol ol, .primisslate ul ul, .primisslate ul ul ul, .primisslate ol ul, .primisslate ol ul ul, .primisslate ol ol ul, .primisslate ul ol, .primisslate ul ol ol, .primisslate ul ul ol {
+    padding-left: 40px;
+    margin: 0;
+}
+/* helper for general navigation */
+.primisslate nav ul, .primisslate nav ol {
+    list-style-type:none;
+
+}
+.primisslate ul, .primisslate menu {
+    list-style-type:disc;
+}
+.primisslate ol {
+    list-style-type:decimal;
+}
+.primisslate ol ul, .primisslate ul ul, .primisslate menu ul, .primisslate ol menu, .primisslate ul menu, .primisslate menu menu {
+    list-style-type:circle;
+}
+.primisslate ol ol ul, .primisslate ol ul ul, .primisslate ol menu ul, .primisslate ol ol menu, .primisslate ol ul menu, .primisslate ol menu menu, .primisslate ul ol ul, .primisslate ul ul ul, .primisslate ul menu ul, .primisslate ul ol menu, .primisslate ul ul menu, .primisslate ul menu menu, .primisslate menu ol ul, .primisslate menu ul ul, .primisslate menu menu ul, .primisslate menu ol menu, .primisslate menu ul menu, .primisslate menu menu menu {
+    list-style-type:square;
+}
+.primisslate li {
+    display:list-item;
+    /* Fixes IE7 issue with positioning of nested bullets */
+    min-height:auto;
+    min-width:auto;
+    padding-left: 20px; /* replace -webkit-padding-start: 40px; */
+}
+.primisslate strong {
+    font-weight:bold;
+}
+.primisslate em {
+    font-style:italic;
+}
+.primisslate kbd, .primisslate samp, .primisslate code, .primisslate pre {
+  font-family:monospace;
+}
+.primisslate a {
+    color: blue;
+    text-decoration: underline;
+}
+.primisslate a:visited {
+    color: #529;
+}
+.primisslate a, .primisslate a *, .primisslate input[type=submit], .primisslate input[type=button], .primisslate input[type=radio], .primisslate input[type=checkbox], .primisslate select, .primisslate button {
+    cursor:pointer;
+}
+.primisslate button, .primisslate input[type=submit] {
+    text-align: center;
+    padding: 2px 6px 3px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: arial, helvetica, sans-serif;
+    font-size: small;
+    background: white;
+    -webkit-appearance: push-button;
+    color: buttontext;
+    border: 1px #a6a6a6 solid;
+    background: lightgrey; /* Old browsers */
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(221,221,221,1) 100%, rgba(209,209,209,1) 100%, rgba(221,221,221,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(221,221,221,1)), color-stop(100%,rgba(209,209,209,1)), color-stop(100%,rgba(221,221,221,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(221,221,221,1) 100%,rgba(209,209,209,1) 100%,rgba(221,221,221,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(221,221,221,1) 100%,rgba(209,209,209,1) 100%,rgba(221,221,221,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(221,221,221,1) 100%,rgba(209,209,209,1) 100%,rgba(221,221,221,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(221,221,221,1) 100%,rgba(209,209,209,1) 100%,rgba(221,221,221,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+    -webkit-box-shadow: 1px 1px 0px #eee;
+       -moz-box-shadow: 1px 1px 0px #eee;
+         -o-box-shadow: 1px 1px 0px #eee;
+            box-shadow: 1px 1px 0px #eee;
+    outline: initial;
+}
+.primisslate button:active, .primisslate input[type=submit]:active, .primisslate input[type=button]:active, .primisslate button:active {
+	background: rgb(59,103,158); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(59,103,158,1) 0%, rgba(43,136,217,1) 50%, rgba(32,124,202,1) 51%, rgba(125,185,232,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(59,103,158,1)), color-stop(50%,rgba(43,136,217,1)), color-stop(51%,rgba(32,124,202,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(59,103,158,1) 0%,rgba(43,136,217,1) 50%,rgba(32,124,202,1) 51%,rgba(125,185,232,1) 100%); /* W3C */
+	border-color: #5259b0;
+}
+.primisslate button {
+    padding: 1px 6px 2px 6px;
+    margin-right: 5px;
+}
+.primisslate input[type=hidden] {
+    display:none;
+}
+/* restore form defaults */
+.primisslate textarea {
+    -webkit-appearance: textarea;
+    background: white;
+    padding: 2px;
+    margin-left: 4px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-size: 11px;
+    font-family: arial, helvetica, sans-serif;
+    line-height: 13px;
+    resize: both;
+}
+.primisslate select, .primisslate textarea, .primisslate input {
+    border:1px solid #ccc;
+}
+.primisslate select {
+    font-size: 11px;
+    font-family: helvetica, arial, sans-serif;
+    display: inline-block;
+}
+.primisslate textarea:focus, .primisslate input:focus {
+    outline: auto 5px -webkit-focus-ring-color;
+    outline: initial;
+}
+.primisslate input[type=text] {
+    background: white;
+    padding: 1px;
+    font-family: initial;
+    font-size: small;
+}
+.primisslate input[type=checkbox], .primisslate input[type=radio] {
+    border: 1px #2b2b2b solid;
+    border-radius: 4px;
+}
+.primisslate input[type=checkbox], .primisslate input[type=radio] {
+    outline: initial;
+}
+.primisslate input[type=radio] {
+    margin: 2px 2px 3px 2px;
+}
+.primisslate abbr[title], .primisslate acronym[title], .primisslate dfn[title] {
+    cursor:help;
+    border-bottom-width:1px;
+    border-bottom-style:dotted;
+}
+.primisslate ins {
+    background-color:#ff9;
+    color:black;
+}
+.primisslate del {
+    text-decoration: line-through;
+}
+.primisslate blockquote, .primisslate q  {
+    quotes:none; /* HTML5 */
+}
+.primisslate blockquote:before, .primisslate blockquote:after, .primisslate q:before, .primisslate q:after, .primisslate li:before, .primisslate li:after  {
+    content:"";
+}
+.primisslate input, .primisslate select {
+    vertical-align:middle;
+}
+
+.primisslate table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.primisslate hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+}
+.primisslate *[dir=rtl] {
+    direction: rtl;
+}
+.primisslate mark {
+    background-color:#ff9;
+    color:black;
+    font-style:italic;
+    font-weight:bold;
+}
+.primisslate menu {
+    padding-left: 40px;
+    padding-top: 8px;
+}
+
+/* additional helpers */
+.primisslate [hidden],
+.primisslate template {
+    display: none;
+}
+.primisslate abbr[title] {
+    border-bottom: 1px dotted;
+}
+.primisslate sub, .primisslate sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.primisslate sup {
+    top: -0.5em;
+}
+.primisslate sub {
+    bottom: -0.25em;
+}
+.primisslate img {
+    border: 0;
+}
+.primisslate figure {
+    margin: 0;
+}
+.primisslate textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+/* == ROOT CONTAINER ELEMENT == */
+/* This contains default values for child elements to inherit  */
+.primisslate {
+    font-size: medium;
+    line-height: 1;
+    direction:ltr;
+    text-align: left; /* for IE, Opera */
+    text-align: start; /* recommended W3C Spec */
+    font-family: "Times New Roman", Times, serif; /* Override this with whatever font-family is required */
+    color: black;
+    font-style:normal;
+    font-weight:normal;
+    text-decoration:none;
+    list-style-type:disc;
+}
+
+.primisslate pre {
+    white-space:pre;
+}
+
+/**/
+#adContainerDiv #slotContainer video, #adContainerDiv #slotContainer iframe, #adContainerDiv #adIma #imaSlotContainer iframe, #adContainerDiv #adIma #imaSlotContainer video, #adContainerDiv #adVpaid #slotContainer iframe {
+    width: 100%;
+    height: 100%;
+}
+,Âòöh      b ‘ñb ‘ñDzDéb‘   i    O^partitionKey=%28https%2Cfontsquirrel.com%29,:https://live.primis.tech/content/video/css/primisslate.css necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2 200 OK
+content-type: text/css
+content-length: 18010
+server: nginx
+date: Sun, 10 Jul 2022 13:32:02 GMT
+last-modified: Wed, 09 Feb 2022 07:06:30 GMT
+etag: "620367f6-465a"
+accept-ranges: bytes
+x-cache: Miss from cloudfront
+via: 1.1 b1cb4dc74f5dad9018280191620fa9c4.cloudfront.net (CloudFront)
+x-amz-cf-pop: MAD51-C3
+x-amz-cf-id: gQ-L-CYfUQ_4krjAPDLXV01UHpJnDYlJwXIaly3cMYZ91vP5KaF_3A==
+X-Firefox-Spdy: h2
+ original-response-headers content-type: text/css
+content-length: 18010
+server: nginx
+date: Sun, 10 Jul 2022 13:32:02 GMT
+last-modified: Wed, 09 Feb 2022 07:06:30 GMT
+etag: "620367f6-465a"
+accept-ranges: bytes
+x-cache: Miss from cloudfront
+via: 1.1 b1cb4dc74f5dad9018280191620fa9c4.cloudfront.net (CloudFront)
+x-amz-cf-pop: MAD51-C3
+x-amz-cf-id: gQ-L-CYfUQ_4krjAPDLXV01UHpJnDYlJwXIaly3cMYZ91vP5KaF_3A==
+X-Firefox-Spdy: h2
+ ctid 5 uncompressed-len 0 net-response-time-onstart 318 net-response-time-onstop 319   FZ

@@ -1,0 +1,4 @@
+export LANG=ES_es.UTF-8
+export LANGUAGE=es_ES:en_US:en
+export LC_MESSSAGES=ES_es.UTF-8
+export LC_CTYPE=es_ES.UTF-8

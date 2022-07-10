@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/molaco/Downloads/MesloLGS%20NF%20Regular.ttf" added="2022-07-09T17:45:04.405062Z" modified="2022-07-09T17:45:04.405072Z" visited="2022-07-09T17:45:04.405064Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T17:45:04.405067Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/MesloLGS%20NF%20Bold.ttf" added="2022-07-09T17:45:12.707423Z" modified="2022-07-09T17:45:12.707431Z" visited="2022-07-09T17:45:12.707425Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T17:45:12.707428Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/MesloLGS%20NF%20Italic.ttf" added="2022-07-09T17:45:15.608803Z" modified="2022-07-09T17:45:15.608814Z" visited="2022-07-09T17:45:15.608805Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T17:45:15.608809Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/MesloLGS%20NF%20Bold%20Italic.ttf" added="2022-07-09T17:45:21.364798Z" modified="2022-07-09T17:45:21.364806Z" visited="2022-07-09T17:45:21.364799Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T17:45:21.364803Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/2eae4f570061a97788a8a9ca4c893797-e80e1f8857078b18ea5a3e4ba42d021637dffa3d.zip" added="2022-07-09T18:48:44.152606Z" modified="2022-07-09T18:48:44.152612Z" visited="2022-07-09T18:48:44.152607Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T18:48:44.152609Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Regular%20Nerd%20Font%20Complete.ttf" added="2022-07-09T19:32:33.927633Z" modified="2022-07-10T13:23:25.754268Z" visited="2022-07-09T19:32:33.927635Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:23:25.754264Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Italic%20Nerd%20Font%20Complete.ttf" added="2022-07-09T20:04:49.912737Z" modified="2022-07-10T13:20:43.709644Z" visited="2022-07-09T20:04:49.912738Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:20:43.709641Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Italic%20Nerd%20Font%20Complete%20Mono.ttf" added="2022-07-09T20:04:56.759913Z" modified="2022-07-10T13:20:22.734949Z" visited="2022-07-09T20:04:56.759914Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:20:22.734945Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Regular%20Nerd%20Font%20Complete%20Mono.ttf" added="2022-07-09T20:07:43.659896Z" modified="2022-07-10T13:23:03.850480Z" visited="2022-07-09T20:07:43.659898Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:23:03.850476Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Bold%20Nerd%20Font%20Complete%20Mono.ttf" added="2022-07-09T20:08:28.258263Z" modified="2022-07-10T13:25:09.896125Z" visited="2022-07-09T20:08:28.258264Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:25:09.896121Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Bold%20Nerd%20Font%20Complete.ttf" added="2022-07-09T20:08:30.563353Z" modified="2022-07-10T13:26:05.145373Z" visited="2022-07-09T20:08:30.563355Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:26:05.145369Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Bold%20Italic%20Nerd%20Font%20Complete%20Mono.ttf" added="2022-07-09T20:08:51.719443Z" modified="2022-07-10T13:24:07.198069Z" visited="2022-07-09T20:08:51.719445Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:24:07.198065Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Bold%20Italic%20Nerd%20Font%20Complete.ttf" added="2022-07-09T20:09:00.590898Z" modified="2022-07-10T13:24:26.965930Z" visited="2022-07-09T20:09:00.590900Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:24:26.965926Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/JetBrains%20Mono%20NL%20Regular%20Nerd%20Font%20Complete.ttf" added="2022-07-09T20:25:46.092141Z" modified="2022-07-09T20:25:46.092146Z" visited="2022-07-09T20:25:46.092142Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:25:46.092144Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/JetBrains%20Mono%20NL%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf" added="2022-07-09T20:25:58.055132Z" modified="2022-07-09T20:25:58.055139Z" visited="2022-07-09T20:25:58.055134Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:25:58.055136Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/JetBrains%20Mono%20NL%20Regular%20Nerd%20Font%20Complete%20Mono.ttf" added="2022-07-09T20:26:04.482048Z" modified="2022-07-09T20:26:04.482056Z" visited="2022-07-09T20:26:04.482050Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:26:04.482052Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/JetBrains%20Mono%20NL%20Regular%20Nerd%20Font%20Complete%20Windows%20Compatible.ttf" added="2022-07-09T20:26:11.538320Z" modified="2022-07-09T20:26:11.538330Z" visited="2022-07-09T20:26:11.538322Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:26:11.538326Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf" added="2022-07-09T20:34:54.730719Z" modified="2022-07-09T20:34:54.730728Z" visited="2022-07-09T20:34:54.730721Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:34:54.730724Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono.ttf" added="2022-07-09T20:34:58.684070Z" modified="2022-07-09T20:34:58.684088Z" visited="2022-07-09T20:34:58.684071Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:34:58.684081Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Windows%20Compatible.ttf" added="2022-07-09T20:35:00.094054Z" modified="2022-07-09T20:35:00.094060Z" visited="2022-07-09T20:35:00.094055Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:35:00.094057Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fira%20Code%20Regular%20Nerd%20Font%20Complete.ttf" added="2022-07-09T20:35:11.860689Z" modified="2022-07-09T20:35:11.860978Z" visited="2022-07-09T20:35:11.860691Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:35:11.860699Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.otf" added="2022-07-09T20:40:26.073434Z" modified="2022-07-09T20:40:26.073443Z" visited="2022-07-09T20:40:26.073435Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:40:26.073439Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Regular%20Nerd%20Font%20Complete%20Mono.otf" added="2022-07-09T20:40:36.733826Z" modified="2022-07-09T20:40:36.733833Z" visited="2022-07-09T20:40:36.733828Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:40:36.733830Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Regular%20Nerd%20Font%20Complete%20Windows%20Compatible.otf" added="2022-07-09T20:40:53.080206Z" modified="2022-07-09T20:40:53.080212Z" visited="2022-07-09T20:40:53.080207Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:40:53.080209Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Regular%20Nerd%20Font%20Complete.otf" added="2022-07-09T20:41:03.879275Z" modified="2022-07-09T20:41:03.879284Z" visited="2022-07-09T20:41:03.879277Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:41:03.879280Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Medium%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.otf" added="2022-07-09T20:42:04.799036Z" modified="2022-07-09T20:42:04.799045Z" visited="2022-07-09T20:42:04.799037Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:42:04.799040Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Medium%20Nerd%20Font%20Complete%20Mono.otf" added="2022-07-09T20:42:13.460664Z" modified="2022-07-09T20:42:13.460672Z" visited="2022-07-09T20:42:13.460665Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:42:13.460668Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Medium%20Nerd%20Font%20Complete%20Windows%20Compatible.otf" added="2022-07-09T20:42:19.845576Z" modified="2022-07-09T20:42:19.845583Z" visited="2022-07-09T20:42:19.845577Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:42:19.845579Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Medium%20Nerd%20Font%20Complete.otf" added="2022-07-09T20:42:24.517946Z" modified="2022-07-09T20:42:24.517953Z" visited="2022-07-09T20:42:24.517948Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:42:24.517950Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Bold%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.otf" added="2022-07-09T20:42:53.048085Z" modified="2022-07-09T20:42:53.048234Z" visited="2022-07-09T20:42:53.048087Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:42:53.048089Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Bold%20Nerd%20Font%20Complete.otf" added="2022-07-09T20:42:53.143618Z" modified="2022-07-09T20:42:53.143625Z" visited="2022-07-09T20:42:53.143619Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:42:53.143622Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Bold%20Nerd%20Font%20Complete%20Mono.otf" added="2022-07-09T20:42:57.044300Z" modified="2022-07-09T20:42:57.044307Z" visited="2022-07-09T20:42:57.044301Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:42:57.044304Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Bold%20Nerd%20Font%20Complete%20Windows%20Compatible.otf" added="2022-07-09T20:43:01.499277Z" modified="2022-07-09T20:43:01.499283Z" visited="2022-07-09T20:43:01.499278Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:43:01.499280Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fura%20Mono%20Bold%20Nerd%20Font%20Complete%20Windows%20Compatible(1).otf" added="2022-07-09T20:43:08.621060Z" modified="2022-07-09T20:43:08.621073Z" visited="2022-07-09T20:43:08.621062Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.formula-template"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-09T20:43:08.621067Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/vim-config-main.zip" added="2022-07-10T07:16:05.447937Z" modified="2022-07-10T07:16:05.447942Z" visited="2022-07-10T07:16:05.447937Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T07:16:05.447939Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Italic%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf" added="2022-07-10T13:20:14.439404Z" modified="2022-07-10T13:20:14.439414Z" visited="2022-07-10T13:20:14.439406Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:20:14.439409Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Italic%20Nerd%20Font%20Complete%20Windows%20Compatible.ttf" added="2022-07-10T13:20:33.394635Z" modified="2022-07-10T13:20:33.394643Z" visited="2022-07-10T13:20:33.394636Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:20:33.394639Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Italic%20Nerd%20Font%20Complete(1).ttf" added="2022-07-10T13:20:52.038494Z" modified="2022-07-10T13:20:52.038506Z" visited="2022-07-10T13:20:52.038497Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:20:52.038501Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf" added="2022-07-10T13:22:35.948983Z" modified="2022-07-10T13:22:35.948993Z" visited="2022-07-10T13:22:35.948985Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:22:35.948988Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Regular%20Nerd%20Font%20Complete%20Windows%20Compatible.ttf" added="2022-07-10T13:23:14.012394Z" modified="2022-07-10T13:23:14.012405Z" visited="2022-07-10T13:23:14.012395Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:23:14.012398Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Bold%20Italic%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf" added="2022-07-10T13:23:54.252216Z" modified="2022-07-10T13:23:54.252223Z" visited="2022-07-10T13:23:54.252217Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:23:54.252219Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Bold%20Italic%20Nerd%20Font%20Complete%20Windows%20Compatible.ttf" added="2022-07-10T13:24:17.512888Z" modified="2022-07-10T13:24:17.512895Z" visited="2022-07-10T13:24:17.512889Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:24:17.512891Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Bold%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf" added="2022-07-10T13:25:07.191804Z" modified="2022-07-10T13:25:07.191817Z" visited="2022-07-10T13:25:07.191806Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:25:07.191811Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/molaco/Downloads/Fantasque%20Sans%20Mono%20Bold%20Nerd%20Font%20Complete%20Windows%20Compatible.ttf" added="2022-07-10T13:25:26.237725Z" modified="2022-07-10T13:25:26.237732Z" visited="2022-07-10T13:25:26.237726Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="font/ttf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2022-07-10T13:25:26.237729Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>
