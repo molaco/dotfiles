@@ -5,75 +5,52 @@ let
     sha256 = "14mbpw8jv1w2c5wvfvj8clmjw0fi956bq5xf9s2q3my14far0as8";
   };
 in ''
-  @define-color nord0 #2E3440;
-  @define-color nord1 #3b4252;
-  @define-color nord2 #434c5e;
-  @define-color nord3 #4c566a;
-  @define-color nord4 #d8dee9;
-  @define-color nord5 #e5e9f0;
-  @define-color nord6 #eceff4;
   * {
     border: none;
     border-radius: 0;
     min-height: 0;
-    font-family: Material Design Icons, FiraMono;
+    font-family: Material Design Icons, monospace;
     font-size: 13px;
   }
-  
   window#waybar {
-    background-color: @nord0;
+    background-color: #181825;
     transition-property: background-color;
     transition-duration: 0.5s;
   }
-
-  #window {
-    border-radius: 4px;
-    margin: 6px 3px;
-    padding: 6px 12px;
-    background-color: @nord2;
-    color: @nord4;
-    font-weight: bold;
+  window#waybar.hidden {
+    opacity: 0.5;
   }
-
-  #custom-logo {
-    padding: 6px 3px;
-    margin: 6px 3px;
-    border-radius: 4px;
-    background-color: @nord2;
-    color: @nord4;
-    font-weight: bold;
-  }
-
   #workspaces {
     background-color: transparent;
-    font-weight: bold;
   }
   #workspaces button {
     all: initial; /* Remove GTK theme values (waybar #1351) */
     min-width: 0; /* Fix weird spacing in materia (waybar #450) */
     box-shadow: inset 0 -3px transparent; /* Use box-shadow instead of border so the text isn't offset */
-    padding: 6px 10px;
+    padding: 6px 18px;
     margin: 6px 3px;
     border-radius: 4px;
-    background-color: @nord1;
-    color: @nord4;
-    font-weight: bold;
+    background-color: #1e1e2e;
+    color: #cdd6f4;
   }
   #workspaces button.active {
-    color: @nord5;
-    background-color: @nord2;
+    color: #1e1e2e;
+    background-color: #cdd6f4;
   }
   #workspaces button:hover {
    box-shadow: inherit;
    text-shadow: inherit;
-   color: @nord6;
-   background-color: @nord3;
+   color: #1e1e2e;
+   background-color: #cdd6f4;
   }
   #workspaces button.urgent {
-    background-color: #38383d;
+    background-color: #f38ba8;
   }
+  #custom-weather,
   #custom-swallow,
   #custom-power,
+  #custom-todo,
+  #custom-weather,
   #battery,
   #backlight,
   #pulseaudio,
@@ -83,28 +60,43 @@ in ''
     border-radius: 4px;
     margin: 6px 3px;
     padding: 6px 12px;
-    background-color: @nord2;
-    color: #CFCFCF;
-    font-weight: bold;
+    background-color: #1e1e2e;
+    color: #181825;
   }
   #custom-power {
     margin-right: 6px;
   }
+  #custom-logo {
+    margin: 6px 3px 6px 9px;
+    padding: 6px 18px;
+    background-image: url("${Logo}");
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #custom-weather,
+  #custom-todo {
+    color: #cdd6f4;
+    background-color: #1e1e2e;
+  }
+  #custom-swallow {
+    color: #cdd6f4;
+  }
   #battery {
-    background-color: #3B3B3B;
+    background-color: #f38ba8;
   }
   @keyframes blink {
     to {
-      background-color: #3B3B3B;
-      color: #CFCFCF;
+      background-color: #f38ba8;
+      color: #181825;
     }
   }
   .warning,
   .critical,
   .urgent,
   #battery.critical:not(.charging) {
-    background-color: #3B3B3B;
-    color: #CFCFCF;
+    background-color: #f38ba8;
+    color: #181825;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -112,25 +104,25 @@ in ''
     animation-direction: alternate;
   }
   #backlight {
-    background-color: @nord2;
+    background-color: #cba6f7;
   }
   #pulseaudio.microphone {
-    background-color: @nord2;
+    background-color: #cba6f7;
   }
   #pulseaudio {
-    background-color: @nord2;
+    background-color: #cba6f7;
   }
   #network {
-    background-color: @nord2;
+    background-color: #cba6f7;
   }
   #clock.date {
-    background-color: @nord2;
+    background-color: #cba6f7;
   }
   #clock {
-    background-color: @nord2;
+    background-color: #cba6f7;
   }
   #custom-power {
-    background-color: @nord2;
+    background-color: #cba6f7;
   }
   tooltip {
     font-family: "Inter", sans-serif;

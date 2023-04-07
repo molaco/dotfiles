@@ -5,10 +5,10 @@
 }: {
   gtk = {
     enable = true;
-    theme = {
-      name = "Catppuccin-Mocha-Standard-Mauve-Dark";
-      package = pkgs.catppuccin-gtk;
-    };
+    #theme = {
+    #  name = "Catppuccin-Mocha-Standard-Mauve-Dark";
+    #  package = pkgs.catppuccin-gtk;
+    #};
 
     iconTheme = {
       name = "Papirus";
@@ -16,7 +16,7 @@
     };
 
     font = {
-      name = "Inter";
+      name = "FiraMono";
       size = 13;
     };
 
@@ -28,12 +28,12 @@
       gtk-decoration-layout = "menu:";
     };
 
-    gtk2.extraConfig = ''
-      gtk-xft-antialias=1
-      gtk-xft-hinting=1
-      gtk-xft-hintstyle="hintslight"
-      gtk-xft-rgba="rgb"
-    '';
+    #gtk2.extraConfig = ''
+    #  gtk-xft-antialias=1
+    #  gtk-xft-hinting=1
+    #  gtk-xft-hintstyle="hintslight"
+    #  gtk-xft-rgba="rgb"
+    #'';
   };
 
   qt = {
@@ -46,7 +46,7 @@
   };
 
   home.pointerCursor = {
-    name = "Catppuccin-Mocha-Light-Cursors";
+    name = "Catppuccin-Mocha-Dark-Cursors";
     package = pkgs.catppuccin-cursors;
     size = 24;
     gtk.enable = true;
@@ -54,7 +54,7 @@
 
   home.sessionVariables = {
     # Theming Related Variables
-    GTK_THEME = "Catppuccin-Mocha-Standard-Mauve-Dark";
+    #GTK_THEME = "Catppuccin-Mocha-Standard-Mauve-Dark";
     XCURSOR_SIZE = "32";
   };
 }

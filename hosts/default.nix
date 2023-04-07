@@ -1,4 +1,4 @@
-{ lib, inputs, nixpkgs, home-manager, nur, user, hyprland, ... }:
+{ lib, inputs, nixpkgs, home-manager, nur, user, hyprland, flake-overlays, ... }:
 
 let
 	system = "x86_64-linux";
@@ -11,6 +11,7 @@ let
 	lib = nixpkgs.lib;
 
 in {
+  
 	laptop = lib.nixosSystem {
 		inherit system;
 		specialArgs = { inherit inputs user; };
@@ -29,18 +30,17 @@ in {
 				nixpkgs = {
         		  		overlays = [
         					(final: prev: {
+
         						catppuccin-cursors = prev.callPackage ../overlays/catppuccin-cursors.nix { };
         			      catppuccin-gtk = prev.callPackage ../overlays/catppuccin-gtk.nix { };
                     catppuccin-folders = prev.callPackage ../overlays/catppuccin-folders.nix {};
+
                     clisp = prev.clisp.override {
-                    # On newer readline8 fails as:
-                    #  #<FOREIGN-VARIABLE "rl_readline_state" #x...>
-                    #   does not have the required size or alignment
-                    readline = pkgs.readline6;
-                    };
+                      readline = pkgs.readline6;
+                      };
 
         			    			})
-        			  		];
+        			  		] ++ flake-overlays;
         				};
 				}
 

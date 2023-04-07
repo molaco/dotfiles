@@ -4,14 +4,14 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, lib, pkgs, inputs, user, ... }:
+{ config, lib, pkgs, inputs, user, rWrapper, rPackages, ... }:
 
 {
   imports =
     [(import ./hardware-configuration.nix)] ++
     # [(import ../../modules/desktop/gnome/default.nix)] ++
     #[(import ../../modules/desktop/hyprland/default.nix)] ++
-    [(import ../../modules/desktop/hyprland/default.nix)] ++
+    #[(import ../../modules/desktop/hyprland/default.nix)] ++
     [(import ../../modules/fonts/fonts.nix)];
     #[(import ../../modules/hardware)];
 
@@ -56,13 +56,13 @@
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.displayManager.gdm.wayland = true;
 
-#  services.xserver.desktopManager.gnome.enable = true;
+  services.xserver.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
-#  services.xserver = {
-#    layout = "es";
-#    xkbVariant = "";
-#  };
+  services.xserver = {
+    layout = "es";
+    xkbVariant = "";
+  };
 
   # Configure console keymap
   console.keyMap = "es";
@@ -140,18 +140,36 @@
     texlive.combined.scheme-full
     unzip
     gcc
+    pam
+    spotify
+    spotifyd
+    playerctl
+    upower
+    acpi
+    cargo
+    rustup
+    brightnessctl
+    python3
+    discord
   ];
+
+## PP
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
     programs.zsh.enable = true;
+    programs.ssh.askPassword = "";
   # programs.gnupg.agent = {
   #   enable = true;
   #   enableSSHSupport = true;
   # };
 
   # List services that you want to enable:
+
+  # Enable ACPI
+
+  services.acpid.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;

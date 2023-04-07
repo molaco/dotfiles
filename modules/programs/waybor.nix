@@ -39,21 +39,21 @@ in {
         fixed-center = true;
         gtk-layer-shell = true;
         height = 34;
-
         modules-left = [
           "custom/logo"
           "wlr/workspaces"
           "custom/swallow"
           "custom/weather"
           "custom/todo"
-#          "tray"
+          "tray"
         ];
 
-        modules-center = [ "hyprland/window" ];
+        modules-center = [];
 
         modules-right = [
           "battery"
           "backlight"
+          "pulseaudio#microphone"
           "pulseaudio"
           "network"
           "clock#date"
@@ -69,15 +69,57 @@ in {
           active-only = false;
         };
 
-        "hyprland/window" = {
-            format = "{}";
-            max-length = 40;
-          };
-
         "custom/logo" = {
-          format = "  ";
-          on-click = "launcher";
+          tooltip = false;
+          format = " ";
         };
+
+        "custom/todo" = {
+          tooltip = true;
+          format = "{}";
+          interval = 7;
+          exec = let
+            todo = pkgs.todo + "/bin/todo";
+            sed = pkgs.gnused + "/bin/sed";
+            wc = pkgs.coreutils + "/bin/wc";
+          in
+            pkgs.writeShellScript "todo-waybar" ''
+              #!/bin/sh
+              total_todo=$(${todo} | ${wc} -l)
+              todo_raw_done=$(${todo} raw done | ${sed} 's/^/      ◉ /' | ${sed} -z 's/\n/\\n/g')
+              todo_raw_undone=$(${todo} raw todo | ${sed} 's/^/     ◉ /' | ${sed} -z 's/\n/\\n/g')
+              done=$(${todo} raw done | ${wc} -l)
+              undone=$(${todo} raw todo | ${wc} -l)
+              tooltip=$(${todo})
+              left="$done/$total_todo"
+              header="<b>todo</b>\\n\\n"
+              tooltip=""
+              if [[ $total_todo -gt 0 ]]; then
+              	if [[ $undone -gt 0 ]]; then
+              		export tooltip="$header👷 Today, you need to do:\\n\\n $(echo $todo_raw_undone)\\n\\n✅ You have already done:\\n\\n $(echo $todo_raw_done)"
+              		export output=" 🗒️ $left"
+              	else
+              		export tooltip="$header✅ All done!\\n🥤 Remember to stay hydrated!"
+              		export output=" 🎉 $left"
+              	fi
+              else
+              	export tooltip=""
+              	export output=""
+              fi
+              printf '{"text": "%s", "tooltip": "%s" }' "$output" "$tooltip"
+            '';
+          return-type = "json";
+        };
+
+        "custom/weather" = {
+          tooltip = true;
+          format = "{}";
+          interval = 30;
+          exec = "${waybar-wttr}/bin/waybar-wttr";
+          return-type = "json";
+        };
+
+
 
         "custom/power" = {
           tooltip = false;
@@ -95,7 +137,7 @@ in {
         };
 
         "clock#date" = {
-          format = "󰃶 {:%a %d}";
+          format = "󰃶 {:%a %d %b}";
           tooltip-format = ''
             <big>{:%Y %B}</big>
             <tt><small>{calendar}</small></tt>'';
@@ -123,8 +165,8 @@ in {
         };
 
         network = {
-          format-wifi = "󰖩 ";
-          format-ethernet = "󰈀 ";
+          format-wifi = "󰖩 {essid}";
+          format-ethernet = "󰈀 {ipaddr}/{cidr}";
           format-alt = "󱛇";
           format-disconnected = "󰖪";
           tooltip-format = ''

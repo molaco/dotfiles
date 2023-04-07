@@ -9,13 +9,13 @@ stdenv.mkDerivation rec {
   version = "0.2.0";
 
   src = fetchzip {
-    url = "https://github.com/catppuccin/cursors/releases/download/v${version}/Catppuccin-Mocha-Light-Cursors.zip";
-    sha256 = "sha256-evV5fBi8QYIEvd3ISGHo1NtJg4JdEH7dX1Sr3m5ODls=";
+    url = "https://github.com/catppuccin/cursors/releases/download/v${version}/Catppuccin-Mocha-Dark-Cursors.zip";
+    sha256 = "sha256-I/QSk9mXrijf3LBs93XotbxIwe0xNu5xbtADIuGMDz8=";
   };
 
   installPhase = ''
-    mkdir -p $out/share/icons/Catppuccin-Mocha-Light-Cursors
-    cp -va index.theme cursors $out/share/icons/Catppuccin-Mocha-Light-Cursors
+    mkdir -p $out/share/icons/Catppuccin-Mocha-Dark-Cursors
+    cp -va index.theme cursors $out/share/icons/Catppuccin-Mocha-Dark-Cursors
   '';
 
   meta = {

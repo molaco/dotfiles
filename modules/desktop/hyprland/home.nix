@@ -15,11 +15,9 @@
 
 	monitor=,preferred,auto,1.25
 	
-	
-	
 	# Execute your favorite apps at launch
 	exec-once = waybar
-	exec-once = swaybg -i "${./wallpaper/default.png}"
+	exec-once = swaybg -i ~/dotfiles/modules/desktop/hyprland/wallpaper/nord10.png
 	
 	# For all categories, see https://wiki.hyprland.org/Configuring/Variables/
 	input {
@@ -45,8 +43,8 @@
 	    border_size = 2
 	    #col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
 	    #col.inactive_border = rgba(595959aa)
-	    col.active_border=0xffcba6f7
-    	    col.inactive_border=0xff313244
+	    col.active_border = 0xff81a1c1
+    	col.inactive_border = 0xff2e3440
 	    layout = dwindle
 	}
 	
@@ -56,10 +54,10 @@
 	    rounding = 8
 
 	    #Blur
-	    blur = yes
-	    blur_size = 10
-	    blur_passes = 4
-	    blur_new_optimizations = on
+	    #blur = no
+	    #blur_size = 10
+	    #blur_passes = 4
+	    #blur_new_optimizations = on
 	
 	    # Shadow
 	    #drop_shadow = yes
@@ -67,23 +65,18 @@
 	    #shadow_render_power = 3
 	    #col.shadow = rgba(1a1a1aee)
 	    drop_shadow = true
-    	    shadow_ignore_window = true
-    	    shadow_offset = 2 2
-    	    shadow_range = 4
+    	shadow_ignore_window = true
+    	shadow_offset = 2 2
+    	shadow_range = 4
 	    shadow_render_power = 2
-    	    col.shadow = 0x66000000
+    	col.shadow = 0x66000000
 
 	    # Blurring layerSurfaces
-            blurls = gtk-layer-shell
-            blurls = waybar
-            blurls = lockscreen
+      #blurls = gtk-layer-shell
+      #blurls = waybar
+      #blurls = lockscreen
 
 	}
-
-	# Blurs
-	blurls = gtk-layer-shell
-  	blurls = waybar
-  	blurls = lockscreen
 	
 	# Animations
 	animations {
@@ -92,8 +85,8 @@
 	    # Bexier Curve
 	    bezier = myBezier, 0.05, 0.9, 0.1, 1.05
 	    bezier = overshot, 0.05, 0.9, 0.1, 1.05
-    	    bezier = smoothOut, 0.36, 0, 0.66, -0.56
-    	    bezier = smoothIn, 0.25, 1, 0.5, 1
+    	bezier = smoothOut, 0.36, 0, 0.66, -0.56
+    	bezier = smoothIn, 0.25, 1, 0.5, 1
 
 	
 	    # Animation list
@@ -104,12 +97,12 @@
 	    animation = workspaces, 1, 6, default
 
 	    #animation = windows, 1, 5, overshot, slide
-    	    #animation = windowsOut, 1, 4, smoothOut, slide
-    	    #animation = windowsMove, 1, 4, default
-    	    #animation = border, 1, 10, default
-    	    #animation = fade, 1, 10, smoothIn
-    	    #animation = fadeDim, 1, 10, smoothIn
-    	    #animation = workspaces, 1, 6, overshot, slidevert
+    	#animation = windowsOut, 1, 4, smoothOut, slide
+    	#animation = windowsMove, 1, 4, default
+    	#animation = border, 1, 10, default
+    	#animation = fade, 1, 10, smoothIn
+    	#animation = fadeDim, 1, 10, smoothIn
+    	#animation = workspaces, 1, 6, overshot, slidevert
 	}
 
 	# Gestures
@@ -125,7 +118,7 @@
 	
 	master {
 	    # See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
-	    new_is_master = true
+	    new_is_master = false
 	}
 	
 		
@@ -183,7 +176,7 @@
 	bind = $mainMod, Return, exec, kitty
 	bind = $mainMod, B, exec, firefox
 	bind = $mainMod, F, exec, thunar
-	bind = $mainMod, R, exec, wofi --show drun
+	bind = $mainMod, R, exec, launcher
 
 	# System
 	bind = $mainMod, Q, killactive, 
@@ -192,19 +185,24 @@
 	bind = $mainMod, P, pseudo, # dwindle
 	bind = $mainMod, J, togglesplit, # dwindle
 
-	 # Screenshots
-  	 $screenshotarea = hyprctl keyword animation "fadeOut,0,0,default"; grimblast --notify copysave area; hyprctl keyword animation "fadeOut,1,4,default"
-  	 bind = , Print, exec, $screenshotarea
-  	 bind = CTRL, Print, exec, grimblast --notify --cursor copysave output
-  	 bind = SUPER SHIFT CTRL, R, exec, grimblast --notify --cursor copysave output
-  	 bind = ALT, Print, exec, grimblast --notify --cursor copysave screen
-  	 bind = SUPER SHIFT ALT, R, exec, grimblast --notify --cursor copysave screen
-     bind = SUPER, G, exec, grim -g "$(slurp)" copysave screen
+	# Screenshots
+  bind = SUPER, G, exec, grim -g "$(slurp)" - | wl-copy
 
 	# Misc
-  	bind = CTRL ALT, L, exec, swaylock
-  	bind = SUPER SHIFT, O, exec, run-as-service wl-ocr
-	
+  bind = CTRL ALT, L, exec, swaylock
+  bind = SUPER SHIFT, O, exec, run-as-service wl-ocr
+
+  # Media
+  bind = SUPER, O, exec, playerctl play-pause
+
+  # Brightness
+#  bind = XF86MonBrightnessUp, exec, brightnessctl s 5%+
+#  bind = XF86MonBrightnessDown, exec, brightnessctl s 5%-
+
+  # Volume
+#  bind = XF86AudioRaiseVolume, exec, amixer set Master 5%+
+#  bind = XF86AudioLowerVolume, exec, amixer set Master 5%-
+
 	# Move focus with mainMod + arrow keys
 	bind = $mainMod, left, movefocus, l
 	bind = $mainMod, right, movefocus, r
@@ -212,22 +210,26 @@
 	bind = $mainMod, down, movefocus, d
 
 	# Move Window
-  	bind = SUPER CTRL SHIFT, left, movewindow, l
-  	bind = SUPER CTRL SHIFT, right, movewindow, r
-  	bind = SUPER CTRL SHIFT, up, movewindow, u
-  	bind = SUPER CTRL SHIFT, down, movewindow, d
+  	bind = SUPER SHIFT, left, movewindow, l
+  	bind = SUPER SHIFT, right, movewindow, r
+  	bind = SUPER SHIFT, up, movewindow, u
+  	bind = SUPER SHIFT, down, movewindow, d
 
 	# Resize
-  	bind = SUPER ALT, left, resizeactive, -20 0
-  	bind = SUPER ALT, right, resizeactive, 20 0
-  	bind = SUPER ALT, up, resizeactive, 0 -20
-  	bind = SUPER ALT, down, resizeactive, 0 20
+  	bind = SUPER CTRL SHIFT, left, resizeactive, -20 0
+  	bind = SUPER CTRL SHIFT, right, resizeactive, 20 0
+  	bind = SUPER CTRL SHIFT, up, resizeactive, 0 -20
+  	bind = SUPER CTRL SHIFT, down, resizeactive, 0 20
 
 
 	# Switch workspaces with mainMod + SHIFT + arrow keys
-	bind = $mainMod SHIFT, left, workspace, -1
-	bind = $mainMod SHIFT, right, workspace, +1
-	
+	bind = $mainMod CTRL , left, workspace, -1
+	bind = $mainMod CTRL , right, workspace, +1
+
+	# Move active window to a workspace with mainMod + CTRL + arrow keys 
+	bind = $mainMod ALT, left, movetoworkspace, -1 
+	bind = $mainMod ALT, right, movetoworkspace, +1 
+
 	# Switch workspaces with mainMod + [0-9]
 	bind = $mainMod, 1, workspace, 1
 	bind = $mainMod, 2, workspace, 2
@@ -251,10 +253,6 @@
 	bind = $mainMod SHIFT, 8, movetoworkspace, 8
 	bind = $mainMod SHIFT, 9, movetoworkspace, 9
 	bind = $mainMod SHIFT, 0, movetoworkspace, 10
-
-	# Move active window to a workspace with mainMod + CTRL + arrow keys 
-	bind = $mainMod CTRL, left, movetoworkspace, -1 
-	bind = $mainMod CTRL, right, movetoworkspace, +1 
 	
 	# Scroll through existing workspaces with mainMod + scroll
 	bind = $mainMod, mouse_down, workspace, e+1

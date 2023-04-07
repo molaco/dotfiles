@@ -71,7 +71,7 @@
 			enable = true;
 			enableZshIntegration = lib.mkDefault true;
 			settings = {
-				format = "→ [❄️ ](bold yellow) $directory(bold blue)$git_branch$git_status[\\$](bold) ";
+				format = "[ ❄️](bold yellow) $directory(bold blue)$git_branch$git_status[\\$](bold) ";
 				directory = {
         				style = "bold blue";
 					};
